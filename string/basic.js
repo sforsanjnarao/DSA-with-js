@@ -24,7 +24,7 @@ function revPrintStringInSameLine(str){
     }
     console.log(result)
 }
-revPrintStringInSameLine("hello")
+// revPrintStringInSameLine("hello")
 
 function isPalindrome(str){
     let rev=''
@@ -35,9 +35,24 @@ function isPalindrome(str){
         else return console.log("it's not a palindrome")
 }
 
-isPalindrome('sanjana')
+// isPalindrome('sanjana')
 
 
-function isPalindromeWithTwoPointer(){
-    
+function isPalindromeWithTwoPointer(str){
+    let i=0, j=str.length-1
+    let isPalindrome=true;
+    while(i<j){
+        if(str.charAt(i)!=str.charAt(j)){
+            isPalindrome=false;
+            break;
+        }
+        i++;
+        j--;
+
+    }
+    if(isPalindrome) console.log("palindrome")
+        else return console.log("not a palindrome")
+
 }
+
+isPalindrome('snajana')
