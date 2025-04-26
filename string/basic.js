@@ -56,3 +56,32 @@ function isPalindromeWithTwoPointer(str){
 }
 
 isPalindrome('snajana')
+
+
+//palindromWithPrompt
+function palindromWithPrompt(){
+    let prompt=require('Prompt-sync')()
+    let str=prompt("enter a string")
+    let isPalindrome=true;
+
+}
+
+//toggel 
+function toggel(){
+
+}
+
+//captialFirstAndLast
+function captialFirstAndLast(str){
+    for(let i=0; i<str.length; i++){
+
+    }
+}
+
+
+
+//checkTwoStringAnagramOrNot
+function checkTwoStringAnagramOrNot(str1,str2){
+    if (str1!==str2) return console.log('Not anagram')
+    
+}
