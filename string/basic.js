@@ -55,7 +55,7 @@ function isPalindromeWithTwoPointer(str){
 
 }
 
-isPalindrome('snajana')
+
 
 
 //palindromWithPrompt
@@ -67,9 +67,22 @@ function palindromWithPrompt(){
 }
 
 //toggel 
-function toggel(){
-
+function toggel(str){
+    console.log(str)
+    let toggel=""
+    for(let i=0; i<str.length; i++){
+        if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90){
+            toggel=toggel+String.fromCharCode(str.charCodeAt(i)+32)
+        }
+        else if(str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122){
+            toggel=toggel+String.fromCharCode(str.charCodeAt(i)-32)
+        }else{
+            console.log('only conevr the english value')
+        }
+    }
+    console.log(toggel)
 }
+toggel('gfaGGGgbg')
 
 //captialFirstAndLast
 function captialFirstAndLast(str){
