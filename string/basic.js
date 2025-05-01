@@ -82,7 +82,7 @@ function toggel(str){
     }
     console.log(toggel)
 }
-toggel('gfaGGGgbg')
+// toggel('gfaGGGgbg')
 
 //captialFirstAndLast
 function captialFirstAndLast(str){
@@ -100,15 +100,19 @@ function checkTwoStringAnagramOrNot(str1,str2){
 }
 
 
-//68
-function frequencyOfEachElement(arr){
-    let map=new Map()
-    for(let i=0; i<arr.length; i++){
-        if(map.has(arr[i])){
-            map.set(arr[i],map.get(arr[i])+1)
-        }
-        else{
-            map.set(arr[i],1)
+//frequencyofEachElement
+function frequencyofEachElement(str){
+    let arr=new Array(128).fill(0)
+    
+    for(let i=0; i<str.length; i++){
+        let index=str.charCodeAt(i)
+        arr[index]+=1
+    }
+
+    for(let i=0; i<arr.length;i++){
+        if(arr[i]>0){
+            console.log(`${String.fromCharCode(i)}->${arr[i]}`)
         }
     }
 }
+// frequencyofEachElement("sanjaAna")
