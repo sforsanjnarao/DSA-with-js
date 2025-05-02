@@ -38,3 +38,26 @@ function factorial(n){
     return n*factorial(n-1)
 }
 // console.log(factorial(6))
+
+//FibonacciWithSimpleLoop
+function FibonacciWithSimpleLoop(n){
+    let first=0, second=1;
+    process.stdout.write(first+" "+second+" ")
+    for(let i=1; i<n-1;i++){
+        let third=first+second
+        first=second
+        second=third;
+        process.stdout.write(third+" ")
+    }
+}
+// FibonacciWithSimpleLoop(10)
+
+function FibonacciWithRecursion(n,first,second){
+    if(n==0) return
+    let third=first+second
+    process.stdout.write(third+" ")
+    FibonacciWithRecursion(n-1,second,third)
+}
+let n=10;
+process.stdout.write(0+" "+1+" ")
+FibonacciWithRecursion(n-2,0,1)
