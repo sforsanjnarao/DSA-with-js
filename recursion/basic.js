@@ -28,4 +28,13 @@ function sum(n){
     if(n==1) return 1
     return n+sum(n-1)
 }
-console.log(sum(5))
+// console.log(sum(5))
+
+
+
+//factorial
+function factorial(n){
+    if(n==1) return n;
+    return n*factorial(n-1)
+}
+// console.log(factorial(6))
