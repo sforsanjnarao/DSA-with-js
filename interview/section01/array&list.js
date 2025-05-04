@@ -18,5 +18,13 @@ function SalesByMatch(n, ar) {
 SalesByMatch(7,[1,2,5,2,1,3,5])
 
 //2. Simple subArray sum
+function simpleArraySum(ar) {
+    let sum=0;
+    for(let i=0; i<ar.length; i++ ){
+        sum=sum+ar[i]
+    } console.log(sum)
+    return sum
+}
+simpleArraySum([1,2,5,2,1,3,5])
 //3. SubArray division
 //4.Migatory Birds
