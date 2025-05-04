@@ -15,7 +15,7 @@ function SalesByMatch(n, ar) {
     console.log(count)
     return count
 }
-SalesByMatch(7,[1,2,5,2,1,3,5])
+// SalesByMatch(7,[1,2,5,2,1,3,5])
 
 //2. Simple subArray sum
 function simpleArraySum(ar) {
@@ -25,6 +25,26 @@ function simpleArraySum(ar) {
     } console.log(sum)
     return sum
 }
-simpleArraySum([1,2,5,2,1,3,5])
+// simpleArraySum([1,2,5,2,1,3,5])
+
+
+
 //3. SubArray division
+function subArrayBrute(s, d, m) {
+    if(s.length<m) return 0
+    let count=0
+
+     for(let i=0 ;i<s.length-m+1; i++){
+        let sum=0;
+        for(let j=0; j<m; j++){
+            sum+=s[i+j]
+        }
+        if(sum===d){
+            count++
+        }
+     }
+     console.log(count)
+    return count;
+}
+subArrayBrute([1,2,5,2,1,3,5],3,2)
 //4.Migatory Birds
