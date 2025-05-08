@@ -75,3 +75,31 @@ function countingSort(arr) {
     } return count
 
 }
+
+//counting Sort 2
+function countingSort(arr) {
+    let count=new Array(100).fill(0)
+    for(let i=0; i<arr.length; i++){
+        count[arr[i]]+=1
+    }
+    let array=[]
+    for(let i=0; i<count.length; i++){
+        while(count[i]>0){
+            array.push(i)
+            count[i]-=1
+        }
+    }return  array   
+}
+
+//Lonely Integer
+function lonelyinteger(a) {
+    let map=new Map()
+    for(let i=0; i<a.length; i++){
+        map.set(a[i],(map.get(a[i])||0)+1)
+    }
+    for(let i=0; i<a.length; i++){
+        if(map.get(a[i])==1){
+            return a[i]
+        }
+    }
+}
