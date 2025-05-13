@@ -52,6 +52,8 @@ subArrayBrute([1,2,5,2,1,3,5],3,2)
 
 
 //minmum sum
+
+//a=[3,2,1,2,3]
 function minimumDistances(a) {
     let map=new Map;
     let minDis=Infinity
