@@ -5,7 +5,7 @@ function jumpingOnclouds(c){
     for(let i=0; i<c.length; i++){
         if(c[i+2]===0) i++
         jump++
-    }
+    } return jump
 }
 
  
