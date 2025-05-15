@@ -5,13 +5,15 @@
 // Your task is to help him buy the maximum number of toys without exceeding his budget. 
 // Return the maximum count of toys he can purchase.
 function maximumToys(prices, k) {
-    price.sort((a,b)=>a-b)
+    prices.sort((a,b)=>a-b)
     let count=0; 
-    let price=k
+    let total=0
     for(let i=0; i<prices.length; i++){
-        while(k>=0){
-            price=k-
+        if(total+prices[i]<=k){
+            total+=prices[i]
+            count++
+        }else{
+            break;
         }
-        return count++
-    }
+    }return count
 }
